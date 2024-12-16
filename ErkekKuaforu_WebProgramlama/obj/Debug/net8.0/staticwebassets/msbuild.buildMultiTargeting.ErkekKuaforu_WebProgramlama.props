@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ErkekKuaforu_WebProgramlama.props" />
+</Project>
