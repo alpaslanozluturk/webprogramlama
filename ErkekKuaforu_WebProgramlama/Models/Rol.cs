@@ -2,7 +2,7 @@
 
 namespace ErkekKuaforu_WebProgramlama.Models
 {
-    public class Rol : IdentityRole<string>
+    public class Rol : IdentityRole
     {
     }
 }
