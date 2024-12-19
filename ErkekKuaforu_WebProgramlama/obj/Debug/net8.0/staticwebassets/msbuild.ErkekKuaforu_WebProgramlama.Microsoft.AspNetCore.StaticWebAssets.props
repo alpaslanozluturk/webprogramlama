@@ -18,23 +18,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ErkekKuaforu_WebProgramlama.s8nrlz4iy5.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ErkekKuaforu_WebProgramlama.zhmz8bowbr.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>ErkekKuaforu_WebProgramlama</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ErkekKuaforu_WebProgramlama</BasePath>
-      <RelativePath>ErkekKuaforu_WebProgramlama.s8nrlz4iy5.bundle.scp.css</RelativePath>
+      <RelativePath>ErkekKuaforu_WebProgramlama.zhmz8bowbr.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>s8nrlz4iy5</Fingerprint>
-      <Integrity>lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM=</Integrity>
+      <Fingerprint>zhmz8bowbr</Fingerprint>
+      <Integrity>WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ErkekKuaforu_WebProgramlama.s8nrlz4iy5.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ErkekKuaforu_WebProgramlama.zhmz8bowbr.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))">
       <SourceType>Package</SourceType>

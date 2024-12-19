@@ -289,3 +289,4 @@ C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.pdb
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.genruntimeconfig.cache
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ref\ErkekKuaforu_WebProgramlama.dll
+C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\scopedcss\Areas\KuaforPaneli\Views\Shared\_Layout.cshtml.rz.scp.css

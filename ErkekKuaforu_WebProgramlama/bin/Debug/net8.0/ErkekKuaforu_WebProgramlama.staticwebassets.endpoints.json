@@ -3,51 +3,6 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
-      "Route": "ErkekKuaforu_WebProgramlama.s8nrlz4iy5.styles.css",
-      "AssetFile": "ErkekKuaforu_WebProgramlama.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1145"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 13:42:18 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s8nrlz4iy5"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM="
-        },
-        {
-          "Name": "label",
-          "Value": "ErkekKuaforu_WebProgramlama.styles.css"
-        }
-      ]
-    },
-    {
       "Route": "ErkekKuaforu_WebProgramlama.styles.css",
       "AssetFile": "ErkekKuaforu_WebProgramlama.styles.css",
       "Selectors": [],
@@ -62,7 +17,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1145"
+          "Value": "2309"
         },
         {
           "Name": "Content-Type",
@@ -70,17 +25,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM=\""
+          "Value": "\"WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 13:42:18 GMT"
+          "Value": "Thu, 19 Dec 2024 13:56:19 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM="
+          "Value": "sha256-WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU="
+        }
+      ]
+    },
+    {
+      "Route": "ErkekKuaforu_WebProgramlama.zhmz8bowbr.styles.css",
+      "AssetFile": "ErkekKuaforu_WebProgramlama.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 13:56:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zhmz8bowbr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU="
+        },
+        {
+          "Name": "label",
+          "Value": "ErkekKuaforu_WebProgramlama.styles.css"
         }
       ]
     },

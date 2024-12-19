@@ -1,0 +1,24 @@
+﻿@model GirisModel
+@{
+    ViewData["Title"] = "Giris";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Giris</h1>
+<form method="post" asp-controller="Kimlik" asp-action="Giris">
+
+    <div>
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-warning"></span>
+    </div> 
+    <div>
+        <label asp-for="Sifre" class="form-label"></label>
+        <input asp-for="Sifre" class="form-control" />
+        <span asp-validation-for="Sifre" class="text-warning"></span>
+    </div>
+    <div>
+        <button type="submit">Giriş</button>
+    </div>
+</form>
+
