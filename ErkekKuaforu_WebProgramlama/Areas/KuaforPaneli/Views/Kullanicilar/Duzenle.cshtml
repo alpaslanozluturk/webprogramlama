@@ -1,0 +1,28 @@
+﻿@model KullaniciDuzenleModel
+@{
+    ViewData["Title"] = "Duzenle";
+    Layout = "~/Areas/KuaforPaneli/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.IsimSoyisim - Profili</h1>
+
+<form method="post" asp-area="KuaforPaneli" asp-controller="Kullanicilar" asp-action="Duzenle">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label asp-for="IsimSoyisim"></label>
+        <input disabled asp-for="IsimSoyisim" />
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input disabled asp-for="Email" />
+    </div>
+    <div>
+        <label asp-for="Rol"></label>
+        <select asp-for="Rol" asp-items="@Model.Roller"></select>
+        <span asp-validation-for="Rol"></span>
+    </div>
+    
+    <div>
+        <button class="btn btn-success" type="submit">Düzenle</button>
+    </div>
+</form>

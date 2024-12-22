@@ -1,0 +1,28 @@
+﻿@model List<KullanicilarRollerleModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/KuaforPaneli/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Kullanıcı Listesi</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>İsim Soyisim</th>
+            <th>Email</th>
+            <th>Görev</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var kullanici in Model){
+            <tr>
+                <td>@kullanici.IsimSoyisim</td>
+                <td>@kullanici.Email</td>
+                <td>@kullanici.Rol</td>
+                <td><a asp-area="KuaforPaneli" asp-controller="Kullanicilar" asp-action="Duzenle" asp-route-kullaniciid="@kullanici.Id" class="btn btn-primary">Düzenle</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+

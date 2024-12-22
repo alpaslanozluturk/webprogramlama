@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JV+EkIscno33lpNNDvvy8PgRE7qKWuL5k2xzuzMNUH8=",
+  "Hash": "DBRM8NVTZ7rc9qEpCeyJ72tHMtEcGVXKtpFyBpmrtQE=",
   "Source": "ErkekKuaforu_WebProgramlama",
   "BasePath": "_content/ErkekKuaforu_WebProgramlama",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "s8nrlz4iy5",
-      "Integrity": "lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM=",
+      "Fingerprint": "zhmz8bowbr",
+      "Integrity": "WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\me_ct\\OneDrive\\Masaüstü\\PROJELER\\Alpaslan\\ErkekKuaforu_WebProgramlama\\ErkekKuaforu_WebProgramlama\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ErkekKuaforu_WebProgramlama.styles.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "s8nrlz4iy5",
-      "Integrity": "lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM=",
+      "Fingerprint": "zhmz8bowbr",
+      "Integrity": "WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\me_ct\\OneDrive\\Masaüstü\\PROJELER\\Alpaslan\\ErkekKuaforu_WebProgramlama\\ErkekKuaforu_WebProgramlama\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ErkekKuaforu_WebProgramlama.bundle.scp.css"
@@ -1413,7 +1413,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1145"
+          "Value": "2309"
         },
         {
           "Name": "Content-Type",
@@ -1421,11 +1421,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM=\""
+          "Value": "\"WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 13:42:18 GMT"
+          "Value": "Thu, 19 Dec 2024 13:56:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1435,97 +1435,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM="
-        }
-      ]
-    },
-    {
-      "Route": "ErkekKuaforu_WebProgramlama.s8nrlz4iy5.bundle.scp.css",
-      "AssetFile": "C:\\Users\\me_ct\\OneDrive\\Masaüstü\\PROJELER\\Alpaslan\\ErkekKuaforu_WebProgramlama\\ErkekKuaforu_WebProgramlama\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ErkekKuaforu_WebProgramlama.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1145"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 13:42:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s8nrlz4iy5"
-        },
-        {
-          "Name": "label",
-          "Value": "ErkekKuaforu_WebProgramlama.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM="
-        }
-      ]
-    },
-    {
-      "Route": "ErkekKuaforu_WebProgramlama.s8nrlz4iy5.styles.css",
-      "AssetFile": "C:\\Users\\me_ct\\OneDrive\\Masaüstü\\PROJELER\\Alpaslan\\ErkekKuaforu_WebProgramlama\\ErkekKuaforu_WebProgramlama\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ErkekKuaforu_WebProgramlama.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1145"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 13:42:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s8nrlz4iy5"
-        },
-        {
-          "Name": "label",
-          "Value": "ErkekKuaforu_WebProgramlama.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM="
+          "Value": "sha256-WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU="
         }
       ]
     },
@@ -1540,7 +1450,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1145"
+          "Value": "2309"
         },
         {
           "Name": "Content-Type",
@@ -1548,11 +1458,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM=\""
+          "Value": "\"WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 13:42:18 GMT"
+          "Value": "Thu, 19 Dec 2024 13:56:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1562,7 +1472,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lPBK09a+30G3hIfDU6m+satos3ChxHGPnkGx/nx0pSM="
+          "Value": "sha256-WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU="
+        }
+      ]
+    },
+    {
+      "Route": "ErkekKuaforu_WebProgramlama.zhmz8bowbr.bundle.scp.css",
+      "AssetFile": "C:\\Users\\me_ct\\OneDrive\\Masaüstü\\PROJELER\\Alpaslan\\ErkekKuaforu_WebProgramlama\\ErkekKuaforu_WebProgramlama\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ErkekKuaforu_WebProgramlama.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 13:56:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zhmz8bowbr"
+        },
+        {
+          "Name": "label",
+          "Value": "ErkekKuaforu_WebProgramlama.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU="
+        }
+      ]
+    },
+    {
+      "Route": "ErkekKuaforu_WebProgramlama.zhmz8bowbr.styles.css",
+      "AssetFile": "C:\\Users\\me_ct\\OneDrive\\Masaüstü\\PROJELER\\Alpaslan\\ErkekKuaforu_WebProgramlama\\ErkekKuaforu_WebProgramlama\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ErkekKuaforu_WebProgramlama.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 13:56:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zhmz8bowbr"
+        },
+        {
+          "Name": "label",
+          "Value": "ErkekKuaforu_WebProgramlama.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WQ+sVg4vByqmlI5IfHjUeL1wTO4LH++1D0QDH6ZuioU="
         }
       ]
     },

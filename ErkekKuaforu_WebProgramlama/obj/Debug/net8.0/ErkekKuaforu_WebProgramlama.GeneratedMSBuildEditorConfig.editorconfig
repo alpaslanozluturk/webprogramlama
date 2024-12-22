@@ -28,6 +28,14 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/me_ct/OneDrive/Masaüstü/PROJELER/Alpaslan/ErkekKuaforu_WebProgramlama/ErkekKuaforu_WebProgramlama/Areas/KuaforPaneli/Views/Kullanicilar/Duzenle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VhZm9yUGFuZWxpXFZpZXdzXEt1bGxhbmljaWxhclxEdXplbmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/me_ct/OneDrive/Masaüstü/PROJELER/Alpaslan/ErkekKuaforu_WebProgramlama/ErkekKuaforu_WebProgramlama/Areas/KuaforPaneli/Views/Kullanicilar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VhZm9yUGFuZWxpXFZpZXdzXEt1bGxhbmljaWxhclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/me_ct/OneDrive/Masaüstü/PROJELER/Alpaslan/ErkekKuaforu_WebProgramlama/ErkekKuaforu_WebProgramlama/Areas/KuaforPaneli/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VhZm9yUGFuZWxpXFZpZXdzXFNoYXJlZFxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,6 +54,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/me_ct/OneDrive/Masaüstü/PROJELER/Alpaslan/ErkekKuaforu_WebProgramlama/ErkekKuaforu_WebProgramlama/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/me_ct/OneDrive/Masaüstü/PROJELER/Alpaslan/ErkekKuaforu_WebProgramlama/ErkekKuaforu_WebProgramlama/Views/Kimlik/Giris.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2ltbGlrXEdpcmlzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/me_ct/OneDrive/Masaüstü/PROJELER/Alpaslan/ErkekKuaforu_WebProgramlama/ErkekKuaforu_WebProgramlama/Views/Kimlik/Kayit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2ltbGlrXEtheWl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/me_ct/OneDrive/Masaüstü/PROJELER/Alpaslan/ErkekKuaforu_WebProgramlama/ErkekKuaforu_WebProgramlama/Views/Shared/Error.cshtml]

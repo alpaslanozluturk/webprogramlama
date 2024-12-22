@@ -75,9 +75,10 @@ namespace ErkekKuaforu_WebProgramlama.Controllers
             }
             return RedirectToAction(nameof(Giris), "Kimlik");
         }
-        public IActionResult Cikis()
+        public async Task<IActionResult> Cikis()
         {
-            return View();
+            await _signInManager.SignOutAsync();
+            return RedirectToAction(nameof(Giris), "Kimlik");
         }
     }
 }
