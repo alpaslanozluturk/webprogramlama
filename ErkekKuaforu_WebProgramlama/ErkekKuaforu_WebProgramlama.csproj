@@ -22,7 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\KuaforPaneli\Controllers\" />
     <Folder Include="Areas\KuaforPaneli\Data\" />
+    <Folder Include="Areas\KuaforPaneli\Models\" />
   </ItemGroup>
 
 </Project>
