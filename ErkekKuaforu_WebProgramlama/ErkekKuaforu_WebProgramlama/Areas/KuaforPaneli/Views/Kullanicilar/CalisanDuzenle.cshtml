@@ -1,0 +1,62 @@
+﻿@model Kisi
+@{
+    ViewData["Title"] = "CalisanDuzenle";
+    Layout = "~/Areas/KuaforPaneli/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Çalışan - @Model.Isim @Model.Soyisim</h1>
+@await Component.InvokeAsync("MesaiEkle")
+<table class="table">
+    <thead>
+        <tr>
+            <th>Gün</th>
+            <th>Giriş</th>
+            <th>Çıkış</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model.Calisans!=null && Model.Calisans.Any()){
+            @foreach(var calisanbilgi in Model.Calisans){
+                <tr>
+                    <td>@calisanbilgi.OnDay</td>
+                    <td>@calisanbilgi.TimeStart</td>
+                    <td>@calisanbilgi.TimeEnd</td>
+                    <td><a class="btn btn-danger" asp-area="KuaforPaneli" asp-controller="Kullanicilar" asp-action="CalisanMesaiSil" asp-route-calisanid="@calisanbilgi.Id">Sil</a></td>
+                </tr>
+            }
+        }else{
+            <tr><td class="bg-warning" style="font-weight:600;">Mesai bilgisi bulunmamaktadır</td></tr>
+        }
+    </tbody>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Hizmet</th>
+            <th>Ücret</th>
+            <th>Süre</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.CalisanHizmets != null && Model.CalisanHizmets.Any())
+        {
+            @foreach (var calisanhizmet in Model.CalisanHizmets)
+            {
+                <tr>
+                    <td>@calisanhizmet.Hizmet.Isim</td>
+                    <td>@calisanhizmet.Hizmet.Ucret</td>
+                    <td>@calisanhizmet.Sure</td>
+                    <td><a class="btn btn-danger" asp-area="KuaforPaneli" asp-controller="Kullanicilar" asp-action="CalisanHizmetSil" asp-route-calisanhizmetid="@calisanhizmet.Id">Sil</a></td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td class="bg-warning" style="font-weight:600;">Hizmet bilgisi bulunmamaktadır</td></tr>
+        }
+    </tbody>
+</table>
+

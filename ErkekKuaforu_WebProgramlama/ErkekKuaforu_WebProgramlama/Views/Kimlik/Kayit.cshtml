@@ -1,0 +1,38 @@
+﻿@model KayitModel
+@{
+    ViewData["Title"] = "Kayit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Kayit</h1>
+
+<form method="post" asp-controller="Kimlik" asp-action="Kayit">
+    <div>
+        <label asp-for="Isim" class="form-label"></label>
+        <input asp-for="Isim" class="form-control" />
+        <span asp-validation-for="Isim" class="text-warning"></span>
+    </div>
+    <div>
+        <label asp-for="Soyisim" class="form-label"></label>
+        <input asp-for="Soyisim" class="form-control" />
+        <span asp-validation-for="Soyisim" class="text-warning"></span>
+    </div>
+    <div>
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-warning"></span>
+    </div>
+    <div>
+        <label asp-for="Sifre" class="form-label"></label>
+        <input asp-for="Sifre" class="form-control" />
+        <span asp-validation-for="Sifre" class="text-warning"></span>
+    </div>
+    <div>
+        <label asp-for="SifreDogrulama" class="form-label"></label>
+        <input asp-for="SifreDogrulama" class="form-control" />
+        <span asp-validation-for="SifreDogrulama" class="text-warning"></span>
+    </div>
+    <div>
+        <button type="submit">Kayıt</button>
+    </div>
+</form>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ErkekKuaforu_WebProgramlama.props" />
+</Project>
