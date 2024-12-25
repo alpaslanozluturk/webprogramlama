@@ -1,5 +1,6 @@
 using ErkekKuaforu_WebProgramlama.Models;
 using ErkekKuaforu_WebProgramlama.Veritabani;
+using ErkekKuaforu_WebProgramlama.Veritabani.Repolar;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -13,7 +14,9 @@ builder.Services.AddDbContext<VeritabaniContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddSession();
-
+builder.Services.AddScoped<ICalisanRepo, CalisanRepo>();
+builder.Services.AddScoped<IHizmetRepo, HizmetRepo>();
+builder.Services.AddScoped<ICalisanHizmetRepo, CalisanHizmetRepo>();
 
 builder.Services.AddIdentity<Kisi, Rol>(opt =>
 {

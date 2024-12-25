@@ -1,0 +1,18 @@
+﻿@model KullaniciHizmetModel
+
+<form method="post" asp-area="KuaforPaneli" asp-controller="Kullanicilar" asp-action="KullaniciHizmetEkle">
+    <input type="hidden" asp-for="KisiId"value="@Model.KisiId" />
+    <div>
+        <label asp-for="SecilenHizmet"></label>
+        <select asp-for="SecilenHizmet" asp-items="@ViewBag.Hizmetler"></select>
+        <span asp-validation-for="SecilenHizmet"></span>
+    </div>
+    <div>
+        <label asp-for="Sure"></label>
+        <input  asp-for="Sure"/>
+        <span asp-validation-for="Sure"></span>
+    </div>
+    <div>
+        <button class="btn btn-primary" type="submit">Ekle / Güncelle</button>
+    </div>
+</form>

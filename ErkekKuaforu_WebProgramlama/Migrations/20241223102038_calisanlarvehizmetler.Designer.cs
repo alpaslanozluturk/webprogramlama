@@ -4,6 +4,7 @@ using ErkekKuaforu_WebProgramlama.Veritabani;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ErkekKuaforu_WebProgramlama.Migrations
 {
     [DbContext(typeof(VeritabaniContext))]
-    partial class VeritabaniContextModelSnapshot : ModelSnapshot
+    [Migration("20241223102038_calisanlarvehizmetler")]
+    partial class calisanlarvehizmetler
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

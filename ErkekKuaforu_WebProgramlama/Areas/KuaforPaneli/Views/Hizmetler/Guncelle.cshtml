@@ -1,0 +1,23 @@
+﻿@model Hizmet
+@{
+    ViewData["Title"] = "Guncelle";
+    Layout = "~/Areas/KuaforPaneli/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Guncelle</h1>
+<form method="post" asp-area="KuaforPaneli" asp-controller="Hizmetler" asp-action="Guncelle">
+    <input type="hidden" asp-for="Id"/>
+    <div>
+        <label asp-for="Isim"></label>
+        <input asp-for="Isim" />
+        <span asp-validation-for="Isim"></span>
+    </div>
+    <div>
+        <label asp-for="Ucret"></label>
+        <input asp-for="Ucret" />
+        <span asp-validation-for="Ucret"></span>
+    </div>
+    <div>
+        <button type="submit" class="bt-success">Ekle</button>
+    </div>
+</form>

@@ -1,0 +1,22 @@
+﻿@model Calisan
+<form asp-area="KuaforPaneli" asp-controller="Kullanicilar" asp-action="MesaiEkle">
+    <input type="hidden" asp-for="KisiId" value="@Model.KisiId" />
+    <div>
+        <label asp-for="OnDay"></label>
+        <select asp-for="OnDay" asp-items="@ViewBag.Gunler" class="form-control"><option value="">-- Gün Seçiniz --</option></select>
+        <span asp-validation-for="OnDay"></span>
+    </div>
+    <div>
+        <label asp-for="TimeStart"></label>
+        <input asp-for="TimeStart" type="time" class="form-control" />
+        <span asp-validation-for="TimeStart"></span>
+    </div>
+    <div>
+        <label asp-for="TimeEnd"></label>
+        <input asp-for="TimeEnd" type="time" class="form-control" />
+        <span asp-validation-for="TimeEnd"></span>
+    </div>
+    <div>
+        <button class="btn btn-success" type="submit">Ekle</button>
+    </div>
+</form>

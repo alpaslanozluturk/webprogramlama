@@ -1,0 +1,67 @@
+﻿@model List<Hizmet>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/KuaforPaneli/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Hizmetler<a class="btn btn-success float-end" asp-area="KuaforPaneli" asp-controller="Hizmetler" asp-action="Ekle"> Ekle</a></h1>
+<table class=" table">
+    <tr>
+        <th>Hizmet</th>
+        <th>Ücret</th>
+        <th></th>
+    </tr>
+    @foreach(var hizmet in Model){
+        <tr>
+            <td>@hizmet.Isim</td>
+            <td>@hizmet.Ucret</td>
+            <td>
+                <button data-hizmetid="@hizmet.Id"
+                        data-calisanhizmets='@Html.Raw(Json.Serialize(hizmet.CalisanHizmets))'
+                        type="button"
+                        class="btn btn-info hizmetinfobtn">
+                    Hizmeti Verenler
+                </button>
+                <a class="btn btn-success float-end" asp-area="KuaforPaneli" asp-controller="Hizmetler" asp-action="Guncelle" asp-route-hizmetid="@hizmet.Id"> Güncelle</a>
+                <a class="btn btn-danger float-end" asp-area="KuaforPaneli" asp-controller="Hizmetler" asp-action="Sil" asp-route-hizmetid="@hizmet.Id"> Sil</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<!-- Modal Yapısı -->
+<div class="modal fade" id="hizmetModal" tabindex="-1" aria-labelledby="hizmetModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hizmetModalLabel">Hizmeti Verenler</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Veriler burada görünecek -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script>
+        $(document).on('click', '.hizmetinfobtn', function () {
+            // Butondan hizmet bilgilerini al
+            let calisanHizmets = $(this).data('calisanhizmets');
+
+            // Modal içeriğini oluştur
+            let modalContent = '<table class="table"><tr><th>Ad</th><th>Soyad</th><th>Görev</th></tr>';
+            calisanHizmets.forEach(item => {
+                modalContent += `<tr><td>${item.Name}</td><td>${item.Surname}</td><td>${item.Role}</td></tr>`;
+            });
+            modalContent += '</table>';
+
+            // Modal içeriğini güncelle ve göster
+            $('#modalBody').html(modalContent);
+            $('#hizmetModal').modal('show');
+        });
+    </script>
+}

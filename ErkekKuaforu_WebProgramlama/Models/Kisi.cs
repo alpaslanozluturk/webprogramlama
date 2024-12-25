@@ -11,5 +11,7 @@ namespace ErkekKuaforu_WebProgramlama.Models
         [Display(Name = "Soyisim")]
         [Required(ErrorMessage = "Soyisim alanı zorunlu")]
         public string Soyisim { get; set; }
+        public ICollection<CalisanHizmet> CalisanHizmets { get; set; }
+        public ICollection<Calisan> Calisans { get; set; }
     }
 }
