@@ -1,0 +1,179 @@
+﻿@model List<Hizmet>
+@{
+    ViewData["Title"] = "Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Randevu al</h1>
+@foreach(var hizmet in Model){
+    <div class="row">
+        <div class="col-4"><strong>İsim : </strong>@hizmet.Isim</div>
+        <div class="col-4"><strong>Ücret (TL) : </strong>@hizmet.Ucret</div>
+        <div class="col-4"><button type="button" class="btn hizmeti-gor">İncele</button></div>
+    </div>
+    <div class="hizmet-secenekleri" style="display:none;">
+        @foreach(var secenek in hizmet.CalisanHizmets){
+            <div class="row">
+                <div class="col-4"><strong>Çalışan : </strong>@secenek.Kisi.Isim @secenek.Kisi.Soyisim</div>
+                <div class="col-4"><strong>Süre (dk) : </strong>@secenek.Sure</div>
+                <div class="col-4"><button class="btn sec-btn" data-calisanhizmetid="@secenek.Id" data-hizmetid="@hizmet.Id" data-hizmetadi="@hizmet.Isim"
+                
+                    data-calisanadi="@secenek.Kisi.Isim @secenek.Kisi.Soyisim" data-sure="@secenek.Sure" data-ucret="@hizmet.Ucret">Seç</button></div>
+            </div>
+        }
+    </div>
+}
+<div id="secilenler" style="display:none;">
+    <input type="hidden" id="secilencalisanhizmetleri" />
+    <div class="row">
+        <div class="col"><b class="d-block">Toplam Süre : </b><span class="total-sure"></span></div>
+        <div class="col"><b class="d-block">Toplam Ücret : </b><span class="total-ucret"></span></div>
+        <div class="col"><b class="d-block">Tarih : </b><input id="tarih" type="datetime-local" /></div>
+        <div class="col"><b class="d-block">Saat : </b><input id="saat" type="time" /></div>
+        <div class="col"><button type="button" id="randevuAl">Randevu al</button></div>
+    </div>
+    <div class='row'>
+        <div class='col'><strong>Hizmet</strong></div>
+        <div class='col'><strong>Çalışan</strong></div>
+        <div class='col'><strong>Süre (dk)</strong></div>
+        <div class='col'><strong>Ücret (TL)</strong></div>
+        <div class='col'></div>
+    </div>
+</div>
+@section Scripts{
+        <script>
+        $(document).ready(function () {
+            // 'hizmeti-gor' butonuna tıklayınca hizmet seçeneklerini göster
+            $('.hizmeti-gor').click(function () {
+                $(this).closest('.row').next('.hizmet-secenekleri').toggle();
+            });
+
+           // 'sec-btn' butonuna tıklayınca seçilen hizmeti ekle veya değiştir
+           $('.sec-btn').click(function () {
+               let hizmetId = $(this).data('hizmetid');
+               let calisanHizmetId = $(this).data('calisanhizmetid');
+               let hizmetAdi = $(this).data('hizmetadi');
+               let calisanAdi = $(this).data('calisanadi');
+               let sure = $(this).data('sure');
+               let ucret = $(this).data('ucret');
+               let secilenlerDiv = $('#secilenler');
+
+               // Aynı hizmetID varsa, değiştirme sorgusu
+               let existingCartItem = secilenlerDiv.find(`.cart-item[data-hizmetid="${hizmetId}"]`);
+               if (existingCartItem.length > 0) {
+                   if (confirm("Bu hizmet için zaten bir seçim yaptınız. Değiştirmek istiyor musunuz?")) {
+                       existingCartItem.remove(); // Eskiyi kaldır
+                   } else {
+                       return; // Kullanıcı hayır dediyse çık
+                   }
+               }
+               let hiddenInput = $('#secilencalisanhizmetleri'); // Gizli input
+
+                // Mevcut seçilen çalışan hizmetlerini al
+                let currentValue = hiddenInput.val();
+                let selectedValues = currentValue ? currentValue.split(',') : [];
+
+                // Eski hizmet ID'ye ait değeri kaldır
+                selectedValues = selectedValues.filter(function (value) {
+                    return !value.startsWith(hizmetId + ':');
+                });
+
+                // Yeni seçim ekle
+                selectedValues.push(hizmetId + ':' + calisanHizmetId);
+
+                // Güncellenmiş değeri gizli inputa yaz
+                hiddenInput.val(selectedValues.join(','));
+
+                // Bilgilendirme için konsola yazdır (isteğe bağlı)
+                console.log("Seçilen Çalışan Hizmetleri:", selectedValues);
+
+               // Yeni seçim ekle
+               let cartItem = `
+                <div class="cart-item" data-hizmetid="${hizmetId}">
+                    <div class='row'>
+                        <div class='col'>${hizmetAdi}</div>
+                        <div class='col'>${calisanAdi}</div>
+                        <div class='col'>${sure}</div>
+                        <div class='col'>${ucret}</div>
+                        <div class='col'><button class="btn btn-danger remove-cart-item">Kaldır</button></div>
+                    </div>
+                </div>
+                    `;
+               secilenlerDiv.append(cartItem).show();
+
+               // Toplamları güncelle
+                updateTotals();
+           });
+
+               // 'Kaldır' butonuna tıklayınca seçilen hizmeti çıkar
+                $(document).on('click', '.remove-cart-item', function () {
+                    $(this).closest('.cart-item').remove();
+                
+                    // Eğer sepet boşsa gizle
+                    if ($('#secilenler .cart-item').length === 0) {
+                        $('#secilenler').hide();
+                    }
+                
+                    // Toplamları güncelle
+                    updateTotals();
+                });
+
+               // Toplam süre ve toplam ücreti güncelleyen fonksiyon
+            function updateTotals() {
+                let totalSure = 0;
+                let totalUcret = 0;
+
+                $('#secilenler .cart-item').each(function () {
+                    let sure = parseInt($(this).find('.col:nth-child(3)').text());
+                    let ucret = parseFloat($(this).find('.col:nth-child(4)').text());
+
+                    totalSure += sure;
+                    totalUcret += ucret;
+                });
+
+                $('.total-sure').text(totalSure + " dk");
+                $('.total-ucret').text(totalUcret.toFixed(2) + " TL");
+            }
+
+             $('#randevuAl').click(function () {
+                // Gerekli alanlardan verileri al
+                let calisanHizmetleri = $('#secilencalisanhizmetleri').val();
+                let tarih = $('#tarih').val();
+                let saat = $('#saat').val();
+
+                // Tarih ve saat birleşimini oluştur
+                let baslangicSaati = saat; // Zaman string olarak alınır
+                let fullTarih = tarih; // Tarih string olarak alınır
+
+                // Form objesi
+                let model = {
+                    CalisanHizmetleri: calisanHizmetleri,
+                    BaslangicSaati: baslangicSaati,
+                    Tarih: fullTarih
+                };
+
+                console.log("Gönderilen Model:", model); // Konsola yazdırma
+
+                // AJAX isteği ile controller'a gönder
+                $.ajax({
+                    type: 'POST',
+                    url: '/Randevular/Ekle', // Controller'daki action url
+                    contentType: 'application/json; charset=utf-8',
+                    data: JSON.stringify(model),
+                    success: function (response) {
+                        alert(response.message);
+                        if(response.success){
+                             window.location.href ='@Url.Action("Index", "Randevular")';
+                        }
+                    },
+                    error: function (error) {
+                        alert("Bir hata oluştu, lütfen tekrar deneyin.");
+                        console.error(error);
+                    }
+                });
+            });
+
+        });
+        </script>
+
+}

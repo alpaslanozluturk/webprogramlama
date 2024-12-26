@@ -1,0 +1,26 @@
+﻿@model Randevu
+@{
+    ViewData["Title"] = "Guncelle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Guncelle</h1>
+@if(TempData["Message"]!=null){
+    <div class="bg-danger py-2 px-4">
+        @TempData["Message"]
+    </div>
+}
+<form asp-area="" asp-controller="Randevular" asp-action="Guncelle">
+    <input type="hidden" asp-for="Id" value="@Model.Id" />
+    <div>
+        <label asp-for="Tarih"></label>
+        <input asp-for="Tarih" />
+        <span asp-validation-for="Tarih"></span>
+    </div>
+    <div>
+        <label asp-for="GirisSaati"></label>
+        <input asp-for="GirisSaati" type="time"/>
+        <span asp-validation-for="GirisSaati"></span>
+    </div>
+    <div><button type="submit" class="btn">Güncelle</button></div>
+</form>

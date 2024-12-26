@@ -17,6 +17,7 @@ builder.Services.AddSession();
 builder.Services.AddScoped<ICalisanRepo, CalisanRepo>();
 builder.Services.AddScoped<IHizmetRepo, HizmetRepo>();
 builder.Services.AddScoped<ICalisanHizmetRepo, CalisanHizmetRepo>();
+builder.Services.AddScoped<IRandevuRepo, RandevuRepo>();
 
 builder.Services.AddIdentity<Kisi, Rol>(opt =>
 {

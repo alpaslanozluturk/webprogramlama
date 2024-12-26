@@ -1,0 +1,113 @@
+﻿@model List<MusteriRandevuModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Randevular <a class="btn btn-success float-end" asp-area="" asp-controller="Randevular" asp-action="Ekle">Yeni Randevu</a></h1>
+<table class="table">
+    <tr>
+        <th>Tarih</th>
+        <th>Saat (Başlangıç)</th>
+        <th>Saat (Bitiş)</th>
+        <th>Ücret</th>
+        <th></th>
+    </tr>
+    @if (Model != null && Model.Any())
+    {
+        foreach (var randevu in Model)
+        {
+            <tr>
+                <td>@randevu.Tarih.ToShortDateString()</td>
+                <td>@randevu.Baslangic</td>
+                <td>@randevu.Bitis</td>
+                <td>@randevu.Ucret</td>
+                <td>
+                    <button type="button" class="btn btn-info detailBtn" data-calisanhizmet="@randevu.CalisanHizmetleri" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Detay
+                    </button>
+                    <a class="btn btn-primary" asp-area="" asp-controller="Randevular" asp-action="Guncelle" asp-route-id="@randevu.Id">
+                        Düzenle
+                    </a>
+                    <a class="btn btn-danger" asp-area="" asp-controller="Randevular" asp-action="Sil" asp-route-id="@randevu.Id">
+                        İptal et
+                    </a>
+                </td>
+            </tr>
+        }
+    }
+    else
+    {
+        <tr>
+            <td>Henüz randevunuz bulunmuyor</td>
+        </tr>
+    }
+</table>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Randevu Detayları</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hizmet</th>
+                            <th>Çalışan</th>
+                            <th>Ücret (TL)</th>
+                            <th>Süre (dk)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="modal-table-body">
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Detay butonuna tıklandığında
+            $('.detailBtn').on('click', function() {
+                var calisanHizmet = $(this).data('calisanhizmet');  // data-calisanhizmet verisini al
+
+                // AJAX çağrısı
+                $.ajax({
+                    url: '@Url.Action("RandevuDetay", "Randevular")',  // Controller'daki action'a yönlendir
+                    method: 'GET',
+                    data: { calisanHizmet: calisanHizmet },  // Gönderilen veri
+                    success: function(response) {
+                        if (response.success) {
+                            var tbody = $('.modal-table-body');
+                            tbody.empty();  // Tablonun mevcut içeriğini temizle
+                            console.log(response.data);
+                            // Gelen veriyi modal tabloya ekle
+                            response.data.forEach(function(item) {
+                                var row = '<tr>' +
+                                    '<td>' + item.hizmet + '</td>' +
+                                    '<td>' + item.calisan + '</td>' +
+                                    '<td>' + item.ucret + '</td>' +
+                                    '<td>' + item.sure + '</td>' +
+                                    '</tr>';
+                                tbody.append(row);  // Yeni satırı tabloya ekle
+                            });
+                        } else {
+                            alert("Detaylar getirilemedi.");
+                        }
+                    },
+                    error: function() {
+                        alert("Bir hata oluştu.");
+                    }
+                });
+            });
+        });
+
+    </script>
+}

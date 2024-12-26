@@ -32,10 +32,15 @@ namespace ErkekKuaforu_WebProgramlama.Veritabani
                 .HasForeignKey(ch => ch.HizmetId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-
+            modelBuilder.Entity<Randevu>()
+                .HasOne(c => c.Musteri)
+                .WithMany()
+                .HasForeignKey(c => c.MusteriId)
+                .OnDelete(DeleteBehavior.NoAction);
         }
         DbSet<Calisan> CalisanBilgileri { get; set; }
         DbSet<CalisanHizmet> CalisanHizmetleri { get; set; }
         DbSet<Hizmet> Hizmetler { get; set; }
+        DbSet<Randevu> Randevular { get; set; }
     }
 }

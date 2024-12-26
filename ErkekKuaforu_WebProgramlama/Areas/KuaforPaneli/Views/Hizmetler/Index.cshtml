@@ -1,4 +1,5 @@
-﻿@model List<Hizmet>
+﻿@using System.Text.Json.Nodes
+@model List<Hizmet>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/KuaforPaneli/Views/Shared/_Layout.cshtml";
@@ -16,8 +17,19 @@
             <td>@hizmet.Isim</td>
             <td>@hizmet.Ucret</td>
             <td>
+                @{
+                    var jsonArray = new JsonArray();
+                    foreach(var h in hizmet.CalisanHizmets){
+                        var hizmetEkibi = new JsonObject
+                        {
+                            ["id"]=h.KisiId,
+                            ["name"]=h.Kisi.Isim+" "+h.Kisi.Soyisim
+                        };
+                        jsonArray.Add(hizmetEkibi); // Veriyi array'e ekliyoruz
+                    }
+                }
                 <button data-hizmetid="@hizmet.Id"
-                        data-calisanhizmets='@Html.Raw(Json.Serialize(hizmet.CalisanHizmets))'
+                        data-calisanhizmets='@jsonArray'
                         type="button"
                         class="btn btn-info hizmetinfobtn">
                     Hizmeti Verenler
@@ -51,11 +63,10 @@
         $(document).on('click', '.hizmetinfobtn', function () {
             // Butondan hizmet bilgilerini al
             let calisanHizmets = $(this).data('calisanhizmets');
-
             // Modal içeriğini oluştur
-            let modalContent = '<table class="table"><tr><th>Ad</th><th>Soyad</th><th>Görev</th></tr>';
+            let modalContent = '<table class="table"><tr><th>Ad Soyad</th></tr>';
             calisanHizmets.forEach(item => {
-                modalContent += `<tr><td>${item.Name}</td><td>${item.Surname}</td><td>${item.Role}</td></tr>`;
+                modalContent += `<tr><td><a href='/KuaforPaneli/Kullanicilar/CalisanDuzenle?kullaniciid=${item.id}' >${item.name}</a></td></tr>`;
             });
             modalContent += '</table>';
 

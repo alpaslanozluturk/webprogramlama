@@ -8,15 +8,18 @@ namespace ErkekKuaforu_WebProgramlama.Areas.KuaforPaneli.Controllers
     public class HizmetlerController : Controller
     {
         private readonly IHizmetRepo _hizmetRepo;
+        private readonly ICalisanHizmetRepo _calisanHizmetRepo;
 
-        public HizmetlerController(IHizmetRepo hizmetRepo)
+        public HizmetlerController(IHizmetRepo hizmetRepo, ICalisanHizmetRepo calisanHizmetRepo)
         {
             _hizmetRepo = hizmetRepo;
+            _calisanHizmetRepo = calisanHizmetRepo;
         }
 
         public IActionResult Index()
         {
-            return View(_hizmetRepo.GetAll("CalisanHizmets,CalisanHizmets.Kisi"));
+            var hizmetler = _hizmetRepo.GetAll("CalisanHizmets,CalisanHizmets.Kisi");
+            return View(hizmetler);
         }
         [HttpGet]
         public IActionResult Ekle()
@@ -50,6 +53,11 @@ namespace ErkekKuaforu_WebProgramlama.Areas.KuaforPaneli.Controllers
         }
         public IActionResult Sil(int hizmetid)
         {
+            var calisanHizmetleri = _calisanHizmetRepo.GetAllByCondition(ch=>ch.HizmetId==hizmetid);
+            foreach(var ch in calisanHizmetleri)
+            {
+                _calisanHizmetRepo.Delete(ch);
+            }
             var hizmet = _hizmetRepo.GetById(hizmetid);
             _hizmetRepo.Delete(hizmet);
             _hizmetRepo.Save();
