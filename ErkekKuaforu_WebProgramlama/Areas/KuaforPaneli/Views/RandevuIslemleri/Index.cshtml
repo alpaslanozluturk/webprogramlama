@@ -1,12 +1,14 @@
-﻿@model List<MusteriRandevuModel>
+﻿@model List<Randevu>
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Areas/KuaforPaneli/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Randevular <a class="btn btn-success float-end" asp-area="" asp-controller="Randevular" asp-action="Ekle">Yeni Randevu</a></h1>
+<h1>Index</h1>
+
 <table class="table">
     <tr>
+        <th>Müşteri</th>
         <th>Tarih</th>
         <th>Saat (Başlangıç)</th>
         <th>Saat (Bitiş)</th>
@@ -19,11 +21,13 @@
         foreach (var randevu in Model)
         {
             <tr>
+                <td>@randevu.Musteri.Isim @randevu.Musteri.Soyisim</td>
                 <td>@randevu.Tarih.ToShortDateString()</td>
-                <td>@randevu.Baslangic</td>
-                <td>@randevu.Bitis</td>
-                <td>@randevu.Ucret</td>
-                <td>@if (randevu.isStatus == null)
+                <td>@randevu.GirisSaati</td>
+                <td>@randevu.CikisSaati</td>
+                <td>@randevu.ToplamUcret</td>
+                <td>
+                    @if (randevu.isStatus == null)
                     {
                         <span>Bekliyor</span>
                     }@if (randevu.isStatus == true)
@@ -38,14 +42,10 @@
                     <button type="button" class="btn btn-info detailBtn" data-calisanhizmet="@randevu.CalisanHizmetleri" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         Detay
                     </button>
-                    @if (randevu.isStatus == null && randevu.Tarih.Date > DateTime.Now)
+                    @if(randevu.isStatus==null && randevu.Tarih.Date>DateTime.Now)
                     {
-                        <a class="btn btn-primary" asp-area="" asp-controller="Randevular" asp-action="Guncelle" asp-route-id="@randevu.Id">
-                            Düzenle
-                        </a>
-                        <a class="btn btn-danger" asp-area="" asp-controller="Randevular" asp-action="Sil" asp-route-id="@randevu.Id">
-                            İptal et
-                        </a>
+                        <a asp-area="KuaforPaneli" asp-controller="RandevuIslemleri" asp-action="RandevuDurumu" asp-route-id="@randevu.Id" asp-route-islem="1" class="btn btn-success">Onay</a>
+                        <a asp-area="KuaforPaneli" asp-controller="RandevuIslemleri" asp-action="RandevuDurumu" asp-route-id="@randevu.Id" asp-route-islem="0" class="btn btn-danger">Red</a>
                     }
                 </td>
             </tr>
@@ -85,7 +85,6 @@
         </div>
     </div>
 </div>
-
 @section Scripts {
     <script>
         $(document).ready(function() {
@@ -95,7 +94,7 @@
 
                 // AJAX çağrısı
                 $.ajax({
-                    url: '@Url.Action("RandevuDetay", "Randevular")',  // Controller'daki action'a yönlendir
+                    url: '/KuaforPaneli/RandevuIslemleri/RandevuDetay',  // Controller'daki action'a yönlendir
                     method: 'GET',
                     data: { calisanHizmet: calisanHizmet },  // Gönderilen veri
                     success: function(response) {
