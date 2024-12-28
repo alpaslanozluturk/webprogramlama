@@ -18,5 +18,132 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background: #eaf1fa;
+}
+nav {
+    background: #258 !important;
+}
+footer {
+    background: #258 !important;
+}
+h1 {
+    font-size: 1.5em;
+    border-left: 5px solid #258;
+    border-bottom: 5px solid #258;
+    border-radius: 15px;
+    padding: .5em .5em;
+}
+.table{
+    margin:3em 0;
+}
+.table th{
+    color: #eaf1fa !important;
+    background:#258;
+}
+.table tr{
+    border-right:1px solid #258;
+    border-left:1px solid #258;
+    border-bottom:1px solid #258;
+}
+.table td{
+    align-content:center;
+}
+.table td a{
+    text-decoration:none;
+    color:#258;
+    font-weight:600;
+    padding:0 .3em .3em .3em;
+    border-bottom:1px solid #258;
+    border-right:1px solid #258;
+    border-left:1px solid #258;
+}
+.table td a.btn-danger,.table td a.btn-success,.table td a.btn-primary{
+    padding:.3em 1em;
+    color:white;
+    margin:0 .5em;
+}
+.text-soft {
+    color: #eaf1fa !important;
+}
+form label{
+    display:block;
+    font-weight:600;
+    margin-bottom:.4em;
+}
+form input, form select, form textarea {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: .5em;
+    border-radius: 15px;
+    border: 2px solid #258;
+}
+form button {
+    margin-left: 25%;
+    background: #258 !important;
+    padding: .3em 2.5em;
+    border-radius: 15px;
+    color: #eaf1fa;
+}
+form {
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 1px 1px 5px 1px #258;
+    border-radius: 15px;
+}
+.takip-tarih {
+    border-bottom: 3px solid #258;
+    margin-top: 2em;
+    padding-bottom: .3em;
+    padding-left: .7em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.takip-calisan {
+    border: 1px solid #258;
+    padding:1em;
+    margin:.3em;
+}
+.takip-calisan div {
+    font-weight: 600;
+    border-bottom: 1px solid #258;
+    padding-bottom:.3em;
+    margin-bottom:.3em;
+}
+.row{
+    margin:0;
+}
+.randevu-main{
+    border:1px solid #258;
+    align-items:center;
+    padding:.5em 0;
+    margin:1em 0 0 0;
+}
+.hizmet-secenekleri{
+    padding:1em 0;
+    background:#dcebfa
+}
+.randevu-main button, .hizmet-secenekleri button{
+    border:1px solid #258;
+    background:#258;
+    color:#eaf1fa;
+    padding: .1em 2em;
+    margin:.2em;
+}
+#secilenler{
+    box-shadow:1px 1px 15px 1px #258;
+    border-radius:15px;
+    margin:3em 0;
+    padding:2em;
+}
+#secilenler .giris{
+    border-bottom:1px solid #258;
+    padding:1em 0;
+    align-items:center;
+}
+#secilenler .giris button{
+    background:#258;
+    padding:.3em 2em;
+    border-radius:15px;
+    color:#eaf1fa;
 }

@@ -1,6 +1,7 @@
 ﻿using ErkekKuaforu_WebProgramlama.Areas.KuaforPaneli.Models;
 using ErkekKuaforu_WebProgramlama.Models;
 using ErkekKuaforu_WebProgramlama.Veritabani.Repolar;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -10,6 +11,7 @@ using System.Data;
 namespace ErkekKuaforu_WebProgramlama.Areas.KuaforPaneli.Controllers
 {
     [Area("KuaforPaneli")]
+    [Authorize(Roles = "Admin")]
     public class KullanicilarController : Controller
     {
         private readonly UserManager<Kisi> _userManager;

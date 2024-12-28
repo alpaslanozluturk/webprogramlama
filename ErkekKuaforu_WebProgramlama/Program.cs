@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddHttpClient();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -18,6 +18,7 @@ builder.Services.AddScoped<ICalisanRepo, CalisanRepo>();
 builder.Services.AddScoped<IHizmetRepo, HizmetRepo>();
 builder.Services.AddScoped<ICalisanHizmetRepo, CalisanHizmetRepo>();
 builder.Services.AddScoped<IRandevuRepo, RandevuRepo>();
+builder.Services.AddScoped<IApiRepo, ApiRepo>();
 
 builder.Services.AddIdentity<Kisi, Rol>(opt =>
 {

@@ -1,0 +1,25 @@
+﻿@model List<HizmetOzetModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/KuaforPaneli/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Çalışan Takip</h1>
+@foreach (var gun in Model)
+{
+    <div class="takip-tarih">Tarih: @gun.Tarih</div>
+    <div class="p-3 d-flex">
+        @foreach (var calisan in gun.Calisanlar)
+        {
+            <div class="takip-calisan">
+                <div>Çalışan: @calisan.Calisan</div>
+                <ul>
+                    @foreach (var hizmet in calisan.Hizmetler)
+                    {
+                        <li><b>@hizmet.Hizmet - Süre:</b> @hizmet.ToplamSure dakika, <b>Ücret:</b> @hizmet.ToplamUcret TL</li>
+                    }
+                </ul>
+            </div>
+        }
+    </div>
+}

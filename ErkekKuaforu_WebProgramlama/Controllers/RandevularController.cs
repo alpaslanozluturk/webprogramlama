@@ -1,10 +1,12 @@
 ﻿using ErkekKuaforu_WebProgramlama.Models;
 using ErkekKuaforu_WebProgramlama.Veritabani.Repolar;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ErkekKuaforu_WebProgramlama.Controllers
 {
+    [Authorize]
     public class RandevularController : Controller
     {
         private readonly IRandevuRepo randevuRepo;

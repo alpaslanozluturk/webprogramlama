@@ -1,28 +1,28 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/ErkekKuaforu_WebProgramlama/css/site.c2tiyv64ts.css">
+    <StaticWebAssetEndpoint Include="_content/ErkekKuaforu_WebProgramlama/css/site.150a1vhge9.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"c2tiyv64ts"},{"Name":"integrity","Value":"sha256-pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0="},{"Name":"label","Value":"_content/ErkekKuaforu_WebProgramlama/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"362"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Dec 2024 02:14:01 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"150a1vhge9"},{"Name":"integrity","Value":"sha256-y1NPmstz9HOvtqTkEvFFhCbuIJXLriWRu3vhNfrfjgo="},{"Name":"label","Value":"_content/ErkekKuaforu_WebProgramlama/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2922"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022y1NPmstz9HOvtqTkEvFFhCbuIJXLriWRu3vhNfrfjgo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 28 Dec 2024 10:54:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ErkekKuaforu_WebProgramlama/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"362"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Dec 2024 02:14:01 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-y1NPmstz9HOvtqTkEvFFhCbuIJXLriWRu3vhNfrfjgo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2922"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022y1NPmstz9HOvtqTkEvFFhCbuIJXLriWRu3vhNfrfjgo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 28 Dec 2024 10:54:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ErkekKuaforu_WebProgramlama/ErkekKuaforu_WebProgramlama.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ErkekKuaforu_WebProgramlama.zhmz8bowbr.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WQ\u002BsVg4vByqmlI5IfHjUeL1wTO4LH\u002B\u002B1D0QDH6ZuioU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2309"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WQ\u002BsVg4vByqmlI5IfHjUeL1wTO4LH\u002B\u002B1D0QDH6ZuioU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Dec 2024 13:56:19 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2309"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WQ\u002BsVg4vByqmlI5IfHjUeL1wTO4LH\u002B\u002B1D0QDH6ZuioU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 28 Dec 2024 09:13:54 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ErkekKuaforu_WebProgramlama/ErkekKuaforu_WebProgramlama.zhmz8bowbr.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ErkekKuaforu_WebProgramlama.zhmz8bowbr.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zhmz8bowbr"},{"Name":"integrity","Value":"sha256-WQ\u002BsVg4vByqmlI5IfHjUeL1wTO4LH\u002B\u002B1D0QDH6ZuioU="},{"Name":"label","Value":"_content/ErkekKuaforu_WebProgramlama/ErkekKuaforu_WebProgramlama.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2309"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WQ\u002BsVg4vByqmlI5IfHjUeL1wTO4LH\u002B\u002B1D0QDH6ZuioU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Dec 2024 13:56:19 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2309"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WQ\u002BsVg4vByqmlI5IfHjUeL1wTO4LH\u002B\u002B1D0QDH6ZuioU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 28 Dec 2024 09:13:54 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ErkekKuaforu_WebProgramlama/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>

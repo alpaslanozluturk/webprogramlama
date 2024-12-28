@@ -37,10 +37,17 @@ namespace ErkekKuaforu_WebProgramlama.Veritabani
                 .WithMany()
                 .HasForeignKey(c => c.MusteriId)
                 .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<ApiModel>()
+               .HasOne(c => c.Kisi)
+               .WithMany()
+               .HasForeignKey(c => c.KisiId)
+               .OnDelete(DeleteBehavior.NoAction);
         }
         DbSet<Calisan> CalisanBilgileri { get; set; }
         DbSet<CalisanHizmet> CalisanHizmetleri { get; set; }
         DbSet<Hizmet> Hizmetler { get; set; }
         DbSet<Randevu> Randevular { get; set; }
+        DbSet<ApiModel> ApiModels { get; set; }
     }
 }

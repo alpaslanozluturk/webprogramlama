@@ -1,8 +1,112 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<h1>Yapay Zeka Hemen Önersin</h1>
+<form>
+    <select id="select1">
+        <option value="">Yüz tipinizi seçiniz</option>
+        <option value="Uzun">Uzun</option>
+        <option value="Kalp">Kalp</option>
+        <option value="Elmas">Elmas</option>
+        <option value="Oval">Oval</option>
+        <option value="Kare">Kare</option>
+        <option value="Yuvarlak">Yuvarlak</option>
+    </select>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <select id="select2" disabled>
+        <option value="">Saç tipinizi seçiniz</option>
+        <option value="Duz">Düz</option>
+        <option value="Dalgali">Dalgalı</option>
+        <option value="Kivircik">Kıvırcık</option>
+    </select>
+
+    <select id="select3" disabled>
+        <option value="">Saç uzunluğunuzu seçiniz</option>
+        <option value="Kısa">Kısa</option>
+        <option value="Normal">Normal</option>
+        <option value="Uzun">Uzun</option>
+    </select>
+
+    <select id="select4" disabled>
+        <option value="">Alın yapınızı seçiniz</option>
+        <option value="Dar">Dar</option>
+        <option value="Normal">Normal</option>
+        <option value="Genis">Geniş</option>
+    </select>
+    @if(User.Identity.IsAuthenticated){
+        <button disabled id="submitButton">Seçimleri Gönder</button>
+    }else{
+        <a asp-controller="Kimlik" asp-action="Giris" class="btn text-soft" style="background:#258; margin-left:25%;">Giriş yap</a>
+    }
+</form>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#select1').change(function () {
+                if ($(this).val() !== "") {
+                    $('#select2').prop('disabled', false);
+                } else {
+                    $('#select2').prop('disabled', true).val('');
+                    $('#select3').prop('disabled', true).val('');
+                    $('#select4').prop('disabled', true).val('');
+                }
+            });
+
+            $('#select2').change(function () {
+                if ($(this).val() !== "") {
+                    $('#select3').prop('disabled', false); 
+                } else {
+                    $('#select3').prop('disabled', true).val('');
+                    $('#select4').prop('disabled', true).val('');
+                }
+            });
+
+            $('#select3').change(function () {
+                if ($(this).val() !== "") {
+                    $('#select4').prop('disabled', false); 
+                } else {
+                    $('#select4').prop('disabled', true).val('');
+                }
+            });
+            $('#select4').change(function () {
+                if ($(this).val() !== "") {
+                    $('#submitButton').prop('disabled', false);
+                } else {
+                    $('#submitButton').prop('disabled', true).val('');
+                }
+            });
+             
+            $('#submitButton').click(function () {
+                const select1Value = $('#select1').val();
+                const select2Value = $('#select2').val();
+                const select3Value = $('#select3').val();
+                const select4Value = $('#select4').val();
+
+              
+                if (!select1Value) {
+                    alert("Lütfen birinci seçim yapınız!");
+                    return;
+                }
+
+               
+                $.ajax({
+                    url: '/Home/Index', 
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        yuzTipi: select1Value,
+                        sacTipi: select2Value,
+                        sacUzunlugu: select3Value,
+                        alinYapisi: select4Value
+                    }),
+                    error: function (err) {
+                        alert("Bir hata oluştu!");
+                        console.error(err);
+                    }
+                });
+            });
+
+        });
+
+    </script>
+}

@@ -1,4 +1,5 @@
 ﻿using ErkekKuaforu_WebProgramlama.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -75,6 +76,7 @@ namespace ErkekKuaforu_WebProgramlama.Controllers
             }
             return RedirectToAction(nameof(Giris), "Kimlik");
         }
+        [Authorize]
         public async Task<IActionResult> Cikis()
         {
             await _signInManager.SignOutAsync();

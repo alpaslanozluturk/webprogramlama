@@ -4,9 +4,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Randevu al</h1>
+<h1>Randevu al<a href="/Randevular" class="float-end btn btn-outline-danger">Geri</a></h1>
 @foreach(var hizmet in Model){
-    <div class="row">
+    <div class="row randevu-main">
         <div class="col-4"><strong>İsim : </strong>@hizmet.Isim</div>
         <div class="col-4"><strong>Ücret (TL) : </strong>@hizmet.Ucret</div>
         <div class="col-4"><button type="button" class="btn hizmeti-gor">İncele</button></div>
@@ -25,14 +25,14 @@
 }
 <div id="secilenler" style="display:none;">
     <input type="hidden" id="secilencalisanhizmetleri" />
-    <div class="row">
+    <div class="row giris">
         <div class="col"><b class="d-block">Toplam Süre : </b><span class="total-sure"></span></div>
         <div class="col"><b class="d-block">Toplam Ücret : </b><span class="total-ucret"></span></div>
         <div class="col"><b class="d-block">Tarih : </b><input id="tarih" type="datetime-local" /></div>
         <div class="col"><b class="d-block">Saat : </b><input id="saat" type="time" /></div>
         <div class="col"><button type="button" id="randevuAl">Randevu al</button></div>
     </div>
-    <div class='row'>
+    <div class='row giris'>
         <div class='col'><strong>Hizmet</strong></div>
         <div class='col'><strong>Çalışan</strong></div>
         <div class='col'><strong>Süre (dk)</strong></div>
@@ -90,7 +90,7 @@
                // Yeni seçim ekle
                let cartItem = `
                 <div class="cart-item" data-hizmetid="${hizmetId}">
-                    <div class='row'>
+                    <div class='row giris'>
                         <div class='col'>${hizmetAdi}</div>
                         <div class='col'>${calisanAdi}</div>
                         <div class='col'>${sure}</div>

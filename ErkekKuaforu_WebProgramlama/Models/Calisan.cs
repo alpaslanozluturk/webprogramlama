@@ -10,8 +10,11 @@ namespace ErkekKuaforu_WebProgramlama.Models
         public string KisiId { get; set; }
         [ForeignKey(nameof(KisiId))]
         public Kisi Kisi { get; set; }
+        [Display(Name = "Giriş Saati")]
         public TimeSpan? TimeStart { get; set; }
+        [Display(Name = "Çıkış Saati")]
         public TimeSpan? TimeEnd { get; set; }
+        [Display(Name ="Gün")]
         public DayOfWeek? OnDay { get; set; }
     }
 }

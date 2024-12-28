@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Guncelle</h1>
+<h1>Randevu Güncelle<a href="/Randevular" class="float-end btn btn-outline-danger">Geri</a></h1>
 @if(TempData["Message"]!=null){
     <div class="bg-danger py-2 px-4">
         @TempData["Message"]
@@ -22,5 +22,5 @@
         <input asp-for="GirisSaati" type="time"/>
         <span asp-validation-for="GirisSaati"></span>
     </div>
-    <div><button type="submit" class="btn">Güncelle</button></div>
+    <div><button type="submit" class="btn text-soft">Güncelle</button></div>
 </form>

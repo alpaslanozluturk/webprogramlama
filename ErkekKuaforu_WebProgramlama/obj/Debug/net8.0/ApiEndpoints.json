@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "ContainingType": "ErkekKuaforu_WebProgramlama.Controllers.IstekController",
+    "Method": "Ekle",
+    "RelativePath": "api/Istek/Ekle",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ilkVeriModel",
+        "Type": "ErkekKuaforu_WebProgramlama.Models.IlkVeriModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ErkekKuaforu_WebProgramlama.Controllers.IstekController",
+    "Method": "Getir",
+    "RelativePath": "api/Istek/Getir",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ErkekKuaforu_WebProgramlama.Controllers.IstekController",
+    "Method": "Getir",
+    "RelativePath": "api/Istek/Getir/{kullaniciID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kullaniciID",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

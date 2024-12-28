@@ -4,7 +4,7 @@
     Layout = "~/Areas/KuaforPaneli/Views/Shared/_Layout.cshtml";
 }
 
-<h1>@Model.IsimSoyisim - Profili</h1>
+<h1>@Model.IsimSoyisim - Profili<a href="/KuaforPaneli/Kullanicilar" class="float-end btn btn-outline-danger">Geri</a></h1>
 
 <form method="post" asp-area="KuaforPaneli" asp-controller="Kullanicilar" asp-action="Duzenle">
     <input type="hidden" asp-for="Id" />

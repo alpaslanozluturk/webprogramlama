@@ -13,7 +13,8 @@
           "Microsoft.EntityFrameworkCore.Design": "8.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.11",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.11",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
+          "OpenAI-DotNet": "8.4.1"
         },
         "runtime": {
           "ErkekKuaforu_WebProgramlama.dll": {}
@@ -1693,6 +1694,14 @@
           }
         }
       },
+      "OpenAI-DotNet/8.4.1": {
+        "runtime": {
+          "lib/net8.0/OpenAI-DotNet.dll": {
+            "assemblyVersion": "8.4.1.0",
+            "fileVersion": "8.4.1.0"
+          }
+        }
+      },
       "System.ClientModel/1.0.0": {
         "dependencies": {
           "System.Memory.Data": "1.0.2",
@@ -2844,6 +2853,13 @@
       "sha512": "sha512-v/GGlIj2dd7svplFmASWEueu62veKW0MrMtBaZ7QG8aJTSGv2yE+pgUGhXRcQ4nxNOEq/wLBrz1vkth/1SND7A==",
       "path": "nuget.versioning/6.11.0",
       "hashPath": "nuget.versioning.6.11.0.nupkg.sha512"
+    },
+    "OpenAI-DotNet/8.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G8YHtVE203NNKTESwQ5XzXWtoNXD+mDMjDMwXfp/MbQgmD8Mqp+CiFLEPV1Qy0iDC/ykFtl+ZP9ZyrXv48a8VA==",
+      "path": "openai-dotnet/8.4.1",
+      "hashPath": "openai-dotnet.8.4.1.nupkg.sha512"
     },
     "System.ClientModel/1.0.0": {
       "type": "package",

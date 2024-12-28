@@ -21,6 +21,14 @@ C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan Özlütürk G221210374 - Ah
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan Özlütürk G221210374 - Ahmet Berke Cindi G211210057\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.dll
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan Özlütürk G221210374 - Ahmet Berke Cindi G211210057\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\refint\ErkekKuaforu_WebProgramlama.dll
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan Özlütürk G221210374 - Ahmet Berke Cindi G211210057\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.pdb
+C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.csproj.AssemblyReference.cache
+C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.AssemblyInfoInputs.cache
+C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.AssemblyInfo.cs
+C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.csproj.CoreCompileInputs.cache
+C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.RazorAssemblyInfo.cache
+C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.RazorAssemblyInfo.cs
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\appsettings.json
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\ErkekKuaforu_WebProgramlama.staticwebassets.runtime.json
@@ -96,6 +104,7 @@ C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\NuGet.ProjectModel.dll
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\NuGet.Protocol.dll
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\NuGet.Versioning.dll
+C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\OpenAI-DotNet.dll
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\System.Composition.AttributedModel.dll
@@ -262,14 +271,7 @@ C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.csproj.AssemblyReference.cache
-C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.AssemblyInfoInputs.cache
-C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.AssemblyInfo.cs
-C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.csproj.CoreCompileInputs.cache
-C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.RazorAssemblyInfo.cache
-C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.RazorAssemblyInfo.cs
+C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\scopedcss\Areas\KuaforPaneli\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\scopedcss\bundle\ErkekKuaforu_WebProgramlama.styles.css
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\scopedcss\projectbundle\ErkekKuaforu_WebProgramlama.bundle.scp.css
@@ -289,4 +291,3 @@ C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.pdb
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ErkekKuaforu_WebProgramlama.genruntimeconfig.cache
 C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\ref\ErkekKuaforu_WebProgramlama.dll
-C:\Users\me_ct\OneDrive\Masaüstü\PROJELER\Alpaslan\ErkekKuaforu_WebProgramlama\ErkekKuaforu_WebProgramlama\obj\Debug\net8.0\scopedcss\Areas\KuaforPaneli\Views\Shared\_Layout.cshtml.rz.scp.css

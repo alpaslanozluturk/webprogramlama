@@ -1,10 +1,12 @@
 ﻿using ErkekKuaforu_WebProgramlama.Models;
 using ErkekKuaforu_WebProgramlama.Veritabani.Repolar;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ErkekKuaforu_WebProgramlama.Areas.KuaforPaneli.Controllers
 {
     [Area("KuaforPaneli")]
+    [Authorize(Roles = "Admin")]
     public class HizmetlerController : Controller
     {
         private readonly IHizmetRepo _hizmetRepo;

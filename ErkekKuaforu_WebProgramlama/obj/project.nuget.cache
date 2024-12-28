@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tqriPq9jYxk=",
+  "dgSpecHash": "WUB/7hCYUK4=",
   "success": true,
   "projectFilePath": "C:\\Users\\me_ct\\OneDrive\\Masaüstü\\PROJELER\\Alpaslan\\ErkekKuaforu_WebProgramlama\\ErkekKuaforu_WebProgramlama\\ErkekKuaforu_WebProgramlama.csproj",
   "expectedPackageFiles": [
@@ -129,6 +129,7 @@
     "C:\\Users\\me_ct\\.nuget\\packages\\nuget.projectmodel\\6.11.0\\nuget.projectmodel.6.11.0.nupkg.sha512",
     "C:\\Users\\me_ct\\.nuget\\packages\\nuget.protocol\\6.11.0\\nuget.protocol.6.11.0.nupkg.sha512",
     "C:\\Users\\me_ct\\.nuget\\packages\\nuget.versioning\\6.11.0\\nuget.versioning.6.11.0.nupkg.sha512",
+    "C:\\Users\\me_ct\\.nuget\\packages\\openai-dotnet\\8.4.1\\openai-dotnet.8.4.1.nupkg.sha512",
     "C:\\Users\\me_ct\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\me_ct\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
     "C:\\Users\\me_ct\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",

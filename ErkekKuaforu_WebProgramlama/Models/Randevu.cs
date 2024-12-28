@@ -10,7 +10,9 @@ namespace ErkekKuaforu_WebProgramlama.Models
         public string MusteriId { get; set; }
         [ForeignKey(nameof(MusteriId))]
         public Kisi Musteri { get; set; }
+        [Display(Name ="Randevu Tarihi")]
         public DateTime Tarih { get; set; }
+        [Display(Name = "Randevu Saati")]
         public TimeSpan GirisSaati { get; set; }
         public TimeSpan CikisSaati { get; set; }
         public string CalisanHizmetleri { get; set; }

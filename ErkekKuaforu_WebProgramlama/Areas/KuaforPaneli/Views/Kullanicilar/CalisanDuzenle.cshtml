@@ -4,7 +4,7 @@
     Layout = "~/Areas/KuaforPaneli/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Çalışan - @Model.Isim @Model.Soyisim</h1>
+<h1>Çalışan - @Model.Isim @Model.Soyisim<a href="/KuaforPaneli/Kullanicilar" class="float-end btn btn-outline-danger">Geri</a></h1>
 @await Component.InvokeAsync("MesaiEkle", new { kisiId = Model.Id})
 <table class="table">
     <thead>

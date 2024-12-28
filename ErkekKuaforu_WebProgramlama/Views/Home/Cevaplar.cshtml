@@ -1,0 +1,27 @@
+﻿@model List<ApiModel>
+@{
+    ViewData["Title"] = "Cevaplar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Cevaplar</h1>
+
+@foreach (var item in Model)
+{
+    <div class="row my-3">
+        <span class="p-2"><b>@item.Tarih</b></span>
+        <div class="col-md-3 col-12">
+            <img src="@item.BirinciFotoUrl" />
+            <span class="d-block text-center"><b>@item.BirinciFotoIsim</b></span>
+        </div>
+        <div class="col-md-3 col-12">
+            <img src="@item.IkinciFotoUrl" />
+            <span class="d-block text-center"><b>@item.IkinciFotoIsim</b></span>
+        </div>
+        <div class="col-md-3 col-12">
+            <img src="@item.UcuncuFotoUrl" />
+            <span class="d-block text-center"><b>@item.UcuncuFotoIsim</b></span>
+        </div>
+    </div>
+    
+}
